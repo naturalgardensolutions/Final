@@ -1,0 +1,185 @@
+/* Olivia Olvera */
+* {
+    box-sizing: border-box;
+}
+body { background-color: beige;
+    color:green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+#wrapper {
+    background-color:beige;
+    padding: 2em;
+}
+header { background-color:green;
+        color:whitesmoke;
+        background-image: url(sunrisecopy.ipg);
+        background-size: 100% 100%;
+       margin-top: 50px ;
+       font-size: 90%;
+       min-height: 200px;
+}
+header a {
+    text-decoration: none;
+    transition: color 10s ease-out;
+}
+header a :link{ color: #FFF;}
+header a :visited {color: #FFF;}
+header a :hover {color: #8F92B2;}
+        .home {
+            height: 20vh;
+            padding-top: 2em;
+            padding-left: 10%;
+        }
+        .content {
+            height: 20vh;
+            padding-top: 2em;
+            padding-left: 10%;
+        }
+        nav {
+            text-align: right;
+            background-color: #F5F5F5;
+            margin: 0;
+            padding-top: 0.5em;
+            padding-bottom: 1em;
+            padding-right: 1em;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            width: 100%;
+            height: auto;
+            padding-right: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding-right: 2em;
+            font-size: 1.2em;
+        }
+        nav li {
+            display: inline;
+            padding-left: 2em;
+            width: 30%;
+        }
+        nav a {
+            text-decoration:solid;
+        }
+        nav a:link {color: blue;}
+        nav a:visited {color: #497777;}
+        nav a:hover { color: #A26100;}
+        h1{
+            line-height: 400%;
+            text-indent: 1em;
+        }
+        li, dd {
+            font-size: 90%;
+        }
+h1 {margin-bottom: 0; }
+h2 {
+    color:green;
+    margin: 0;
+}
+footer { 
+    background-color: green;
+    color:white ;
+    font-size: small ; 
+    text-align: center;
+    font-style: italic;
+    clear: right;
+}
+#mathero {
+    height: 300px ;
+    background-image: url(sedonabackgroundcopy.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: none;
+}
+#loungehero {
+    height: 300px;
+    background-image: url(sunrise.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: none;
+}
+h2 {margin:0 ;}
+section {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+#flow {
+    display:block;
+}
+table {
+    border: 1px solid #40407A;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+    position: left;
+}
+td, th {
+    padding: 2em;
+    border: 1px solid #40407A;
+}
+tr:nth-of-type(even) {
+    background-color: #D7E8E9;
+}
+caption {
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+input, datalist, textarea {
+    margin-bottom: 0.5em;
+}
+@media (min-width: 600px) {
+    nav ul {
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    nav li {
+        width: 7em;
+    }
+    section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #mathero, #loungehero {
+        display: block;
+        padding-bottom: 1em;
+    }
+    #flow {
+        display: flex;
+        flex-direction: row;
+    }
+    form {
+        width: 60%;
+        max-width: 40em;
+        display: grid;
+        grid-gap: 1em; gap: 1em;
+        grid-template-columns: 9em 1fr;
+        grid-template-rows: auto;
+    }
+    input[type="submit"] {
+        grid-column: 2/3;
+        width: 9em;
+    }
+}
+.onethird {
+    float: left;
+    width: 33%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.onehalf {
+    float: left;
+    width: 50%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+ul {color:rgb(69, 87, 158);}
+.resort { color:aquamarine}
